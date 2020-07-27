@@ -72,6 +72,12 @@ const mutations = {
   },
   key_pause(state, data) {
     state.keyboard['pause'] = data
+  },
+  currentMode(state, data) {
+    state.mode = data
+  },
+  userLoggedIn(state, data) {
+    state.loggedIn = data
   }
 }
 export default mutations

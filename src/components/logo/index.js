@@ -16,7 +16,6 @@ export default {
       handler(nextProps, oldProps) {
         this.animate(nextProps)
         if (
-          // 只有在游戏进入开始, 或结束时 触发改变
           ([oldProps.cur, nextProps.cur].indexOf(false) !== -1 &&
             oldProps.cur !== nextProps.cur) ||
           oldProps.reset !== nextProps.reset
@@ -44,7 +43,7 @@ export default {
         return
       }
 
-      let m = 'r' // 方向
+      let m = 'r' 
       let count = 0
 
       const set = (func, delay) => {
@@ -55,7 +54,7 @@ export default {
       }
 
       const show = func => {
-        // 显示
+    
         set(() => {
           this.display = 'block'
           if (func) {
@@ -65,7 +64,7 @@ export default {
       }
 
       const hide = func => {
-        // 隐藏
+
         set(() => {
           this.display = 'none'
           if (func) {
@@ -75,7 +74,6 @@ export default {
       }
 
       const eyes = (func, delay1, delay2) => {
-        // 龙在眨眼睛
         set(() => {
           this.style = m + 2
           set(() => {
@@ -88,7 +86,6 @@ export default {
       }
 
       const run = func => {
-        // 开始跑步啦！
         set(() => {
           this.style = m + 4
           set(() => {
@@ -134,12 +131,11 @@ export default {
       }
 
       show(() => {
-        // 忽隐忽现
         hide(() => {
           show(() => {
             hide(() => {
               show(() => {
-                dra() // 开始运动
+                dra() 
               })
             })
           })

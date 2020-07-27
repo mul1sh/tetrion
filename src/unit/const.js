@@ -43,7 +43,7 @@ export const clearPoints = [100, 300, 700, 1500]
 export const StorageKey = 'VUE_TETRIS'
 
 export const lastRecord = (() => {
-  // 上一把的状态
+
   let data = window.localStorage.getItem(StorageKey)
   if (!data) {
     return false
@@ -77,10 +77,9 @@ export const transform = (function() {
   return trans.filter(e => body.style[e] !== undefined)[0]
 })()
 
-export const eachLines = 20 // 每消除eachLines行, 增加速度
+export const eachLines = 20 
 
 export const getParam = param => {
-  // 获取浏览器参数
   const r = new RegExp(`\\?(?:.+&)?${param}=(.*?)(?:&.*)?$`)
   const m = window.location.toString().match(r)
   return m ? decodeURI(m[1]) : ''

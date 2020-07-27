@@ -1,8 +1,7 @@
 .background(@from, @to) {
     background: (@from + @to)/2;
     background: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
-    background: -moz-linear-gradient(top, @from, @from); // IE9使用filter背景渐变, 但因为使用了borader-radius, 所以不兼容, IE9使用中和的背景色即可
-    //filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='@{from}', endColorstr='@{to}');
+    background: -moz-linear-gradient(top, @from, @from); 
 }
 
 .button {
@@ -53,7 +52,7 @@
         box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
     }
     &.blue i {
-        .background(#6e77ef, #4652f3);
+        .background(#5971AD, #3D59AB);
     }
     &.green i {
         .background(#4bc441, #0ec400);

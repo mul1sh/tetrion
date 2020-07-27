@@ -40,7 +40,6 @@ export default {
   methods: {
     render() {
       if (this.propTime) {
-        // 右下角时钟
         const now = this.time
         const hour = formate(now.getHours())
         const min = formate(now.getMinutes())
