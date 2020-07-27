@@ -4,8 +4,8 @@
   "data": {
     "title": {
       "cn": "俄罗斯方块",
-      "en": "T E T R I S",
-      "fr": "T E T R I S",
+      "en": "T E T R I 0 N",
+      "fr": "T E T R I 0 N",
       "fa": "خانه سازی"
     },
     "github": {
@@ -34,20 +34,20 @@
     },
     "titleCenter": {
       "cn": "俄罗斯方块<br />TETRIS",
-      "en": "TETRIS",
-      "fr": "TETRIS",
+      "en": "TETRI0N",
+      "fr": "TETRI0N",
       "fa": "خانه سازی"
     },
     "point": {
       "cn": "得分",
-      "en": "Point",
+      "en": "Points",
       "fr": "Score",
       "fa": "امتیاز"
     },
     "highestScore": {
       "cn": "最高分",
-      "en": "Max",
-      "fr": "Max",
+      "en": "Max Score",
+      "fr": "Max Score",
       "fa": "حداکثر"
     },
     "lastRound": {
@@ -64,13 +64,13 @@
     },
     "level": {
       "cn": "级别",
-      "en": "Level",
+      "en": "Speed",
       "fr": "Difficulté",
       "fa": "سطح"
     },
     "startLine": {
       "cn": "起始行",
-      "en": "Start Line",
+      "en": "Level",
       "fr": "Ligne Départ",
       "fa": "خط شروع"
     },

@@ -1,5 +1,5 @@
 import store from '../vuex/store'
-// 使用 Web Audio API
+
 const AudioContext =
   window.AudioContext ||
   window.webkitAudioContext ||
@@ -26,9 +26,8 @@ export const music = {}
     context.decodeAudioData(
       req.response,
       buf => {
-        // 将拿到的audio解码转为buffer
         const getSource = () => {
-          // 创建source源。
+
           const source = context.createBufferSource()
           source.buffer = buf
           source.connect(context.destination)
@@ -36,12 +35,12 @@ export const music = {}
         }
 
         music.killStart = () => {
-          // 游戏开始的音乐只播放一次
+          
           music.start = () => {}
         }
 
         music.start = () => {
-          // 游戏开始
+        
           music.killStart()
           if (!store.state.music) {
             return
@@ -50,7 +49,7 @@ export const music = {}
         }
 
         music.clear = () => {
-          // 消除方块
+       
           if (!store.state.music) {
             return
           }
@@ -58,7 +57,7 @@ export const music = {}
         }
 
         music.fall = () => {
-          // 立即下落
+       
           if (!store.state.music) {
             return
           }
@@ -66,7 +65,7 @@ export const music = {}
         }
 
         music.gameover = () => {
-          // 游戏结束
+        
           if (!store.state.music) {
             return
           }
@@ -74,7 +73,7 @@ export const music = {}
         }
 
         music.rotate = () => {
-          // 旋转
+
           if (!store.state.music) {
             return
           }
@@ -82,7 +81,7 @@ export const music = {}
         }
 
         music.move = () => {
-          // 移动
+
           if (!store.state.music) {
             return
           }

@@ -1,6 +1,5 @@
 import { blockShape } from '../../unit/const'
 const xy = {
-  // 方块在下一个中的坐标
   I: [1, 0],
   L: [0, 0],
   J: [0, 0],
